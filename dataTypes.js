@@ -1,3 +1,3 @@
 var greeting = "Hello ";
 var name = "Dania";
-greeting + name;
+console.log(greeting + name);
