@@ -4,4 +4,4 @@ console.log(greeting + name);
 console.log((greeting + name).length);
 console.log(name[0]);
 console.log(name.slice(1));
-console.log("I am alive".toUpperCase());
+console.log(("I am " + name).toUpperCase());
