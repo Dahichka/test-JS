@@ -37,13 +37,15 @@
                             remainingLetters--;
                         }
                         else{
-                            [j] = guess;
+                            answerArray[j] = guess;
                             remainingLetters--;
                         }
                     }
                 }
             }
         }
+        alert(answerArray.join(" "));
+        alert("Good job! The answer was " + word)
     </script>
 
 </body>
