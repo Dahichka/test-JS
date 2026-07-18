@@ -7,7 +7,7 @@
 
 <body>
     <script>
-        var name = prompt("What's your name&");
+        var name = prompt("What's your name?");
         console.log("Hello " + name);
         var words = [
             "Vasia",
@@ -31,9 +31,15 @@
             }
             else{
                 for(var j = 0; j < word.length; j++){
-                    if((word[j] === guess) || (word[j] === guess.toUpperCase)){
-                        answerArray[j] = guess;
-                        remainingLetters--;
+                    if((word[j] === guess) || (word[j] === guess.toUpperCase())){
+                        if(j === 0){
+                            answerArray[j] = guess.toLocaleUpperCase();
+                            remainingLetters--;
+                        }
+                        else{
+                            [j] = guess;
+                            remainingLetters--;
+                        }
                     }
                 }
             }
