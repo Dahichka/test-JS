@@ -6,6 +6,7 @@ x = input("Do you like chesse?(y/n)")
 print(x)
 if(x == "y"):
     print("You cool.")
-
 else:
     print("ok")
+
+y = input("How old are you?")
